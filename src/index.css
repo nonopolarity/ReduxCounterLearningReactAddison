@@ -1,3 +1,8 @@
 body {
   text-align: center;
 }
+
+body,
+button {
+  font: 27px Arial, sans-serif;
+}

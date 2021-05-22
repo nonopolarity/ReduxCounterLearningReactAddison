@@ -1,7 +1,7 @@
 .Counter {
   display: inline-block;
   padding: 1.2em 3.6em;
-  border: 3px solid #000;
+  border: 3px solid #ccc;
   border-radius: 12px;
   margin: 1.2em;
 }
