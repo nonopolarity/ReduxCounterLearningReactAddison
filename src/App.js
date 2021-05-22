@@ -1,10 +1,18 @@
-import HamburgerCounter from './HamburgerCounter';
-import './App.css';
+import Counter from './Counter';
 
-export default function App() {
-  return (
-    <div className="App">
-      <HamburgerCounter />
-    </div>
-  );
+import { connect } from 'react-redux';
+
+function mapStates(state) {
+  return {
+    count: state.countHamburger,
+  };
 }
+
+function mapDispatch(dispatch) {
+  return {
+    inc: () => dispatch({ type: 'INC' }),
+    dec: () => dispatch({ type: 'DEC' }),
+  };
+}
+
+export default connect(mapStates, mapDispatch)(Counter);
